@@ -1,0 +1,219 @@
+@font-face{font-family:monument extended;font-style:normal;font-weight:400;src:local('Monument Extended'),url(https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff) format('woff')}@font-face{font-family:monument extended;font-style:normal;font-weight:800;src:local('Monument Extended'),url(https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff) format('woff')}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html body{
+    height: 100%;
+    width: 100%;
+    
+}
+body #main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+#main #Navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3vw;
+   
+    margin-top: 2vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#Navbar h1{
+    font-family:monument extended ;
+    font-size: 40px;
+    letter-spacing: -1;
+    width: 20%;
+    position: relative;
+}
+#Navbar h1::after{
+    content: "©";
+    font-size: 20px;
+    position: absolute;
+    font-family: "gilroy";
+    font-weight: 98%;
+}
+#Navbar h1::before{
+    content: "model management";
+    font-size: 15px;
+    position: absolute;
+    font-family: "gilroy";
+    font-weight: 500;
+    top: 40px;
+    left: 90px;
+    color: rgba(36, 33, 31, 0.575);
+}
+#Navbar h3{
+    height: 5vw;
+    width: 100vw;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#main #content{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 1.5vw;
+    overflow: hidden;
+    
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    
+}
+
+#content #txt{
+    width: 35%;
+    top: 65%;
+    font-family:"monument extended" ;
+    font-size: 50px;
+    padding-left: 3vw;
+    font-weight: bolder;
+    color: aliceblue;
+    position: absolute;
+}
+#content #txt::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: white;
+}
+
+#content #num{
+    height: 70px;
+    width: 70px;
+    top: 70%;
+    left: 90%;
+    padding: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 30px;
+    font-weight: 20%;
+    color: aliceblue;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+#content #txt1{
+    height: 100%;
+    width: 35%;
+    top: 90%;
+    font-family:monument extended ;
+    font-size: 20px;
+    padding-left: 3vw;
+    font-weight: bolder;
+    color: aliceblue;
+    position: absolute;
+}
+#content #arrow{
+    width: 70px;
+    top: 89%;
+    left: 89%;
+    font-size: 30px;
+    font-weight: 10;
+    color: aliceblue;
+    position: absolute;
+}
+#main #Body{
+    height: 200px;
+    width: 100%;
+    margin-top: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+marquee #pic{
+    margin-right: 50px;
+    display: inline-block;
+    text-align: center;
+    gap: 90px;
+    
+}
+#pic img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+}
+#main #Alphabhet{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 2vw;
+}
+
+#Alphabhet h5{
+    font-weight: bolder;
+    font-size: larger;
+    font-style: italic;
+    border-bottom: 2px solid black;
+}
+#Alphabhet p {
+    width: 30%;
+    padding-left: 1.5vw;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Alphabhet p span {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#Alphabhet p span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+#Alphabhet p span:hover::before {
+    width: 40px;
+    height: 40px;
+}
+#main #center{
+    padding: 3vw;
+}
+
+
